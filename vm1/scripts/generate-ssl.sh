@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Water Monitoring Infrastructure - SSL Certificate Generation Script
 set -e
 
