@@ -41,7 +41,7 @@ chmod +x shared/monitoring/*.sh
 # Generate SSL certificates
 echo "🔐 Generating SSL certificates..."
 cd vm1/scripts
-./generate-ssl.sh
+./generate-ssl.sh --san "DNS:localhost,IP:127.0.0.1" --copy-shared
 cd ../..
 
 # Start main hub

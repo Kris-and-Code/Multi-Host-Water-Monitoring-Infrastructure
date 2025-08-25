@@ -59,9 +59,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```bash
 cd vm1
 
-# Generate SSL certificates
+# Generate SSL certificates (with SANs and copy to shared)
 chmod +x scripts/generate-ssl.sh
-./scripts/generate-ssl.sh
+./scripts/generate-ssl.sh --san "DNS:localhost,IP:127.0.0.1" --copy-shared
 
 # Start the main infrastructure
 cd docker
